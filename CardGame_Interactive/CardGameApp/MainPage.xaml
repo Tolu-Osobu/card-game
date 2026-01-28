@@ -2,7 +2,39 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CardGameApp.MainPage">
-			 
-	<Label Text="Template project for the Interactive Card Game Exercise"
-	       HorizontalOptions="Center" VerticalOptions="Center"/>
+    <Grid RowDefinitions="*, 2*, *" ColumnDefinitions="30, auto, *, auto" >
+        
+        <!--buttons -->
+        <Button 
+            x:Name="_btnSwitch"
+            Text="Switch"
+            Grid.Row="1" Grid.Column="1"
+            
+            />
+        <Button 
+            x:Name="_btnDeal"
+            Text="Deal"
+            Grid.Row="0" Grid.Column="1"
+            
+                />
+        <Button 
+            x:Name="_btnPlay"
+            Text="Play"
+            Grid.Row="2" Grid.Column="1"
+                />
+        <!-- Images -->
+        <Image 
+            x:Name="_imgPlayerCardBack"
+            Grid.Row="0" Grid.Column="2"
+            
+               />
+
+
+
+
+    </Grid>
+    
+    <!--OG text -->
+    <!--<Label Text="Template project for the Interactive Card Game Exercise"
+	       HorizontalOptions="Center" VerticalOptions="Center"/-->
 </ContentPage>
